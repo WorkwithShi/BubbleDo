@@ -4,7 +4,7 @@ import Bubble from "./Bubble";
 import "./App.css";
 
 function App() {
-  // 🧠 Load from localStorage when the app starts
+  // Load from localStorage when the app starts
   const [bubbles, setBubbles] = useState(() => {
     const saved = localStorage.getItem("bubbledoTasks");
     return saved ? JSON.parse(saved) : [];
@@ -18,7 +18,7 @@ function App() {
     const newBubble = {
       id: Date.now(),
       text,
-      image: `/assets/b${randomIndex}.png`,
+      image: `assets/b${randomIndex}.png`,
       left: randomLeft,
       top: randomTop,
     };
@@ -29,7 +29,7 @@ function App() {
     setBubbles((prev) => prev.filter((b) => b.id !== id));
   };
 
-  // 💾 Save to localStorage whenever bubbles change
+  // Save to localStorage whenever bubbles change
   useEffect(() => {
     localStorage.setItem("bubbledoTasks", JSON.stringify(bubbles));
   }, [bubbles]);
