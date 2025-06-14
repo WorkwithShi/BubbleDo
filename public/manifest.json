@@ -8,12 +8,12 @@
   "description": "A floating to-do list with bubbly vibes",
   "icons": [
     {
-      "src": "/assets/BubbleDoIcon.png",
+      "src": "/BubbleDoShi.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/home/vipul/bubbledo/public/assets/BubbledoIcon1.png",
+      "src": "/BubbledoIcon1.png",
       "sizes": "512x512",
       "type": "image/png"
     }
