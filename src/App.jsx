@@ -60,7 +60,7 @@ function App() {
 
   return (
     <div className="app">
-      <img src="assets/BubbleDoT.png" alt="BubbleDo Logo" className="logo" />
+      <img src="./BubbleDoT.png" alt="BubbleDo Logo" className="logo" />
 
       {bubbles.map((b) => (
         <Bubble
