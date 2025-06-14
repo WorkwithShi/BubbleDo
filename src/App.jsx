@@ -18,11 +18,11 @@ function App() {
     const newBubble = {
       id: Date.now(),
       text,
-      image: `assets/b${randomIndex}.png`,
+      image: process.env.PUBLIC_URL + `/assets/b${randomIndex}.png`,
       left: randomLeft,
       top: randomTop,
     };
-    setBubbles((prev) => [...prev, newBubble]);
+    setBubbles((prev) => [...prev, newBubble]);    
   };
 
   const removeBubble = (id) => {
